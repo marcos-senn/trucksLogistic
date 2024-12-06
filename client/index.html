@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/webp"
+            href="./src/assets/images/image.png"
+            className="rounded-lg"
+        />
+        <meta name="thumbnail" content="https://github.com/marcos-senn/seric/blob/main/client/src/assets/images/image.png" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <title>NombreEmpresaServicios</title>
+
+        <!-- Preload de recursos críticos -->
+        <link
+            rel="preload"
+            href="/src/assets/fonts/yourfont.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="/src/assets/images/hero-image.webp"
+            as="image"
+        />
+
+        <!-- Carga diferida del script principal -->
+        <script type="module" src="/src/main.tsx" defer></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!-- Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-M7FVZFT0T1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-M7FVZFT0T1");
+        </script>
+    </body>
+</html>

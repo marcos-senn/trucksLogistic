@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+   @keyframes colorChange {
+     0%, 100% {
+       background-color: theme('colors.black');
+       color: theme('colors.bronze');
+     }
+     50% {
+       background-color: theme('colors.bronze');
+       color: theme('colors.black');
+     }
+   }
+ 
+   .animate-colorChange {
+     animation: colorChange 2s infinite;
+   }
+
+  @keyframes inOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+ }
