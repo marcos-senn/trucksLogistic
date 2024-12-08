@@ -9,7 +9,7 @@ const StickyWP = () => {
     
 
     return (
-        <div className="fixed left-5 z-10 md:left-10 md:top-3/4 md:transform md:-translate-y-1/2 md:z-50 top-2/4 md:right-4 sm:w-[64px] sm:h-[64px] w-[60px] h-[60px]">
+        <div className="fixed left-5 z-10 md:left-10 md:top-3/4 md:transform md:-translate-y-1/2 md:z-50 top-3/4 md:right-4 sm:w-[64px] sm:h-[64px] w-[60px] h-[60px]">
             <a
                 href={whatsappLink}
                 target="_blank"

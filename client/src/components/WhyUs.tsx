@@ -126,11 +126,11 @@ const WhyUs = () => {
         <section className="py-14">
             <div className="max-w-screen-xl mx-auto px-4 text-center text-gray-600 md:px-8">
                 <div className="max-w-2xl mx-auto">
-                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        ¿Por que elegirnos?
-                    </h3>
+                    <h1 className="text-4xl font-extrabold sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5] leading-tight sm:leading-tight md:leading-snug">
+                        ¿POR QUÉ ELEGIRNOS?
+                    </h1>
                 </div>
-                <div className="mt-12">
+                <div className="mt-16">
                     <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
                         {features.map((item, idx) => (
                             <li key={idx} className="space-y-3">

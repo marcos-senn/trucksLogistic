@@ -18,10 +18,10 @@ const OurTeam = () => {
     return (
         <section className="py-14">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-xl mx-auto sm:text-center">
-                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        Nuestro Equipo
-                    </h3>
+                <div className="max-w-xl mx-auto sm:text-center text-center">
+                    <h1 className="text-4xl font-extrabold sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">
+                        NUESTRO EQUIPO
+                    </h1>
                     <p className="text-gray-600 mt-3">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
                     </p>

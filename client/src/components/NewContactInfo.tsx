@@ -72,48 +72,25 @@ const ContactInfo = () => {
             {/* Contact Section */}
             <main className="mt-12 max-w-screen-xl mx-auto px-4 text-gray-600">
                 <div className="flex justify-center items-center">
-                    <h2 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
-                        Contacto
-                    </h2>
+                    <h1 className="text-4xl font-extrabold sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5] mb-5">
+                        CONTACTO
+                    </h1>
                 </div>
                 <div className=" space-y-3 flex flex-col justify-center items-center">
-                    <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    <p className="text-gray-800 text-3xl font-semibold sm:text-4xl text-center mb-2">
                         Dejanos saber como podemos ayudarte
                     </p>
-                    <div>
-                        <form className="max-w-sm mx-auto ml-0">
-                            <label
-                                htmlFor="message"
-                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                            >
-                                Déjanos tu mensaje y cómo contactarte, y
-                                responderemos a la brevedad...
-                            </label>
-                            <textarea
-                                id="message"
-                                rows="4"
-                                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Mensaje..."
-                            ></textarea>
-                            <button
-                                type="submit"
-                                className="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                            >
-                                Enviar mensaje
-                            </button>
-                        </form>
-                    </div>
                 </div>
                 <div className="flex justify-center items-center flex-col mt-5">
-                    <p>
-                        Ademas podes contactarnos de las siguientes maneras
-                        Estamos aqui para ayudarte a responder cualquier
-                        pregunta que tengas y encantado de atarnderte.
+                    <p className="text-center">
+                        Podes contactarnos de las siguientes maneras Estamos
+                        aqui para ayudarte a responder cualquier pregunta que
+                        tengas y encantado de atarnderte.
                     </p>
-                    <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24">
+                    <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24 justify-center">
                         {contactMethods.map((item, idx) => (
                             <li key={idx}>
-                                <h4 className="text-gray-800 text-lg font-medium">
+                                <h4 className="text-gray-800 text-lg font-medium text-center">
                                     {item.title}
                                 </h4>
                                 <div className="mt-3 flex items-center gap-x-3">
