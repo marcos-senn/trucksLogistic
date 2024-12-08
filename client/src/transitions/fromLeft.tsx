@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
-const SlideInFromLeft = ({ children }) => {
+interface SlideInFromLeftProps {
+    children: ReactNode;
+}
+
+const SlideInFromLeft = ({ children }: SlideInFromLeftProps) => {
     return (
         <motion.div
             initial={{ opacity: 0, x: -100 }}

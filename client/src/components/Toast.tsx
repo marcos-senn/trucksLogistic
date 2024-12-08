@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 const Toast = () => {
   // Estado para controlar la visibilidad del popup
   const [isPopupVisible, setPopupVisible] = useState(true);
