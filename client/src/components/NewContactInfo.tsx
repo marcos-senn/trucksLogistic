@@ -1,3 +1,6 @@
+import AnimatedSection from "../transitions/scroll";
+import SlideInFromLeft from "../transitions/fromLeft";
+
 const ContactInfo = () => {
     const contactMethods = [
         {
@@ -67,45 +70,60 @@ const ContactInfo = () => {
         },
     ];
 
-    return (
-        <div>
-            {/* Contact Section */}
-            <main className="mt-12 max-w-screen-xl mx-auto px-4 text-gray-600">
+    
+return (
+    <div>
+        {/* Contact Section */}
+        <main className="mt-12 max-w-screen-xl mx-auto px-4 text-gray-600 ">
+            <SlideInFromLeft>
                 <div className="flex justify-center items-center">
                     <h1 className="text-4xl font-extrabold sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5] mb-5">
                         CONTACTO
                     </h1>
                 </div>
-                <div className=" space-y-3 flex flex-col justify-center items-center">
-                    <p className="text-gray-800 text-3xl font-semibold sm:text-4xl text-center mb-2">
-                        Dejanos saber como podemos ayudarte
-                    </p>
-                </div>
+            </SlideInFromLeft>
+
+            <div className=" space-y-3 flex flex-col justify-center items-center">
+                <p className="text-gray-800 text-3xl font-semibold sm:text-4xl text-center mb-2">
+                    Dejanos saber como podemos ayudarte
+                </p>
+            </div>
+
+            {/* Corrected Closing Tag for SlideInFromLeft */}
+            <SlideInFromLeft>
                 <div className="flex justify-center items-center flex-col mt-5">
                     <p className="text-center">
-                        Podes contactarnos de las siguientes maneras Estamos
+                        Podes contactarnos de las siguientes maneras. Estamos
                         aqui para ayudarte a responder cualquier pregunta que
-                        tengas y encantado de atarnderte.
+                        tengas y encantado de atenderte.
                     </p>
-                    <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24 justify-center">
-                        {contactMethods.map((item, idx) => (
-                            <li key={idx}>
-                                <h4 className="text-gray-800 text-lg font-medium text-center">
-                                    {item.title}
-                                </h4>
-                                <div className="mt-3 flex items-center gap-x-3">
-                                    <div className="flex-none text-gray-400">
-                                        {item.icon}
-                                    </div>
-                                    <p>{item.contact}</p>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
                 </div>
-            </main>
-        </div>
-    );
+            </SlideInFromLeft>
+
+            <AnimatedSection>
+                <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24 justify-center">
+                    {contactMethods.map((item, idx) => (
+                        <li
+                            key={idx}
+                            className=""
+                        >
+                            <h4 className="text-gray-800 text-lg font-medium text-center group-hover:text-white">
+                                {item.title}
+                            </h4>
+                            <div className="mt-3 flex items-center gap-x-3">
+                                <div className="flex-none text-gray-400">
+                                    {item.icon}
+                                </div>
+                                <p>{item.contact}</p>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </AnimatedSection>
+        </main>
+    </div>
+);
+
 };
 
 export default ContactInfo;

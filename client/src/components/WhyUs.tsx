@@ -1,3 +1,6 @@
+import AnimatedSection from "../transitions/scroll";
+import SlideInFromLeft from "../transitions/fromLeft";
+
 const WhyUs = () => {
     const features = [
         {
@@ -125,26 +128,30 @@ const WhyUs = () => {
     return (
         <section className="py-14">
             <div className="max-w-screen-xl mx-auto px-4 text-center text-gray-600 md:px-8">
-                <div className="max-w-2xl mx-auto">
-                    <h1 className="text-4xl font-extrabold sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5] leading-tight sm:leading-tight md:leading-snug">
-                        ¿POR QUÉ ELEGIRNOS?
-                    </h1>
-                </div>
-                <div className="mt-16">
-                    <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
-                        {features.map((item, idx) => (
-                            <li key={idx} className="space-y-3">
-                                <div className="w-12 h-12 mx-auto bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center">
-                                    {item.icon}
-                                </div>
-                                <h4 className="text-lg text-gray-800 font-semibold">
-                                    {item.title}
-                                </h4>
-                                <p>{item.desc}</p>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <SlideInFromLeft>
+                    <div className="max-w-2xl mx-auto">
+                        <h1 className="text-4xl font-extrabold sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5] leading-tight sm:leading-tight md:leading-snug">
+                            ¿POR QUÉ ELEGIRNOS?
+                        </h1>
+                    </div>
+                </SlideInFromLeft>
+                <AnimatedSection>
+                    <div className="mt-16">
+                        <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+                            {features.map((item, idx) => (
+                                <li key={idx} className="space-y-3">
+                                    <div className="w-12 h-12 mx-auto bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center">
+                                        {item.icon}
+                                    </div>
+                                    <h4 className="text-lg text-gray-800 font-semibold">
+                                        {item.title}
+                                    </h4>
+                                    <p>{item.desc}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </AnimatedSection>
             </div>
         </section>
     );

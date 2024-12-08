@@ -3,28 +3,32 @@
 @tailwind utilities;
 
 @layer utilities {
-   @keyframes colorChange {
-     0%, 100% {
-       background-color: theme('colors.black');
-       color: theme('colors.bronze');
-     }
-     50% {
-       background-color: theme('colors.bronze');
-       color: theme('colors.black');
-     }
-   }
- 
-   .animate-colorChange {
-     animation: colorChange 2s infinite;
-   }
+    @keyframes colorChange {
+        0%,
+        100% {
+            background-color: theme("colors.black");
+            color: theme("colors.bronze");
+        }
+        50% {
+            background-color: theme("colors.bronze");
+            color: theme("colors.black");
+        }
+    }
 
-  @keyframes inOut {
-    0%, 100% {
-      transform: scale(1);
+    .animate-colorChange {
+        animation: colorChange 2s infinite;
     }
-    50% {
-      transform: scale(1.2);
+
+    @keyframes inOut {
+        0%,
+        100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
     }
-  }
-  
- }
+}
+
+
+.tracking-in-expand{animation:tracking-in-expand 0.4s linear both} @keyframes tracking-in-expand{0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}}
